@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:viez_module/config/service_locator.dart';
-import 'package:viez_module/pages/home/home_cubit.dart';
+import 'package:viez_module/pages/sample/sample_cubit.dart';
 import 'package:viez_module/repositories/app_repository.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class SamplePage extends StatefulWidget {
+  const SamplePage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<SamplePage> createState() => _SamplePageState();
 }
 
-class _HomePageState extends State<HomePage> {
-  HomeCubit homeCubit = HomeCubit(appRepository: locator.get<AppRepository>());
+class _SamplePageState extends State<SamplePage> {
+  SampleCubit homeCubit = SampleCubit(appRepository: locator.get<AppRepository>());
 
   @override
   void initState() {
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: BlocProvider(
         create: (context) => homeCubit,
-        child: BlocConsumer<HomeCubit, HomeState>(
+        child: BlocConsumer<SampleCubit, SampleState>(
           listener: (context, state) {
             // TODO: implement listener
             debugPrint(

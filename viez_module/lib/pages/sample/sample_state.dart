@@ -1,11 +1,11 @@
-part of 'home_cubit.dart';
+part of 'sample_cubit.dart';
 
 enum MyStatus {
   initial, loading, success, error
 }
 
-class HomeState extends Equatable {
-  const HomeState({required this.status, this.numberTrivia});
+class SampleState extends Equatable {
+  const SampleState({required this.status, this.numberTrivia});
 
   final MyStatus status;
   final String? numberTrivia;
@@ -13,15 +13,15 @@ class HomeState extends Equatable {
   @override
   List<Object> get props => [status];
 
-  factory HomeState.initial(){
-    return const HomeState(status: MyStatus.initial);
+  factory SampleState.initial(){
+    return const SampleState(status: MyStatus.initial);
   }
 
-  HomeState copyWith({
+  SampleState copyWith({
     MyStatus? status,
     String? numberTrivia,
   }) {
-    return HomeState(
+    return SampleState(
       status: status ?? this.status,
       numberTrivia: numberTrivia ?? this.numberTrivia,
     );

@@ -1,4 +1,4 @@
-import 'package:viez_api_testing/services/remote/api_service.dart';
+import 'package:viez_module/services/remote/api_service.dart';
 
 class AppRepository {
   const AppRepository({
