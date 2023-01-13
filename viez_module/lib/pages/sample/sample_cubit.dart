@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:viez_api_testing/repositories/app_repository.dart';
+import 'package:viez_module/repositories/app_repository.dart';
 
 part 'home_state.dart';
 

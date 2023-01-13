@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:viez_api_testing/config/service_locator.dart';
-import 'package:viez_api_testing/pages/home/home_cubit.dart';
-import 'package:viez_api_testing/repositories/app_repository.dart';
+import 'package:viez_module/config/service_locator.dart';
+import 'package:viez_module/pages/home/home_cubit.dart';
+import 'package:viez_module/repositories/app_repository.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
